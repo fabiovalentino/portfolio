@@ -27,6 +27,9 @@ export default class Resume extends Component {
               <p>
                 {work.summary}
               </p>
+              {work.highlights.map((highlight)=>
+                <p className="info"><span>•</span>{highlight}</p>
+              )}
             </div>
           </div>
           )}
