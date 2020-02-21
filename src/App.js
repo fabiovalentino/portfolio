@@ -3,7 +3,6 @@ import Header from './components/header/header';
 import About from './components/about/about';
 import Resume from './components/resume/resume';
 import Portfolio from './components/portfolio/portfolio';
-import Testimonials from  './components/testimonials/testimonials';
 import ContactUs from './components/contactus/contactus';
 import Footer from './components/footer/footer';
 //import logo from './logo.svg';
@@ -31,12 +30,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header resume={this.state.data} />
-        <About />
-        <Resume />
-        <Portfolio />
-        <Testimonials />
-        <ContactUs />
-        <Footer />
+        <About resume={this.state.data} />
+        <Resume resume={this.state.data} />
+        <Portfolio resume={this.state.data} />
+        <ContactUs resume={this.state.data} />
+        <Footer resume={this.state.data} />
       </div>
     );
   }
